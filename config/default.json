@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://Vipul123:Vipul123@cluster0.bqvlb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "c825d18bd8ff8900bca3",
+    "githubSecret": "9d35174d958021288fca003b1e411a7cf58b33a8"
+}
