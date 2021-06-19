@@ -3,7 +3,8 @@ import {SET_ALERT, REMOVE_ALERT} from '../action/types';
 
 const initialState = [];
 
-export default function foo(state = initialState,action){
+// eslint-disable-next-line
+export default function (state = initialState,action){
 
     const { type, payload} = action;
 
@@ -11,8 +12,9 @@ export default function foo(state = initialState,action){
         case SET_ALERT:
             return [...state, action];
         case REMOVE_ALERT:
-            return state.filter(alert => alert.id !==payload);
+            return state.filter((alert) => alert.id !==payload);
         default:
             return state;
     }
 }
+
