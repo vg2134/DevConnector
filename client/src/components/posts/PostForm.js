@@ -4,12 +4,12 @@ import { connect } from 'react-redux';
 import { addPost } from '../../action/post';
 
 
-const PostForm = (addPost) => {
+const PostForm = ({ addPost }) => {
     const [text, setText] = useState(' ');
     return (
         <div class="post-form">
             <div class="bg-primary p">
-                <h3>Leave A Comment</h3>
+                <h3>Say Something...</h3>
             </div>
             <form class="form my-1" onSubmit={e => {
                 e.preventDefault();
@@ -20,7 +20,7 @@ const PostForm = (addPost) => {
                     name="text"
                     cols="30"
                     rows="5"
-                    placeholder="Comment on this post"
+                    placeholder="Add a Post"
                     value={text}
                     onChange={e => setText(e.target.value)}
                     required
