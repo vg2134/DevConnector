@@ -133,7 +133,7 @@ export const addComment = (postId, formData) => async dispatch => {
 
     const config = {
         headers: {
-            'Content-Type': 'applicaion/json'
+            'Content-Type': 'application/json'
         }
     }
     try {
